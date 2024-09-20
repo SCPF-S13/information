@@ -1,0 +1,43 @@
+site_name: Site - 13 Information
+site_url: https://scpf-s13.github.io/information
+site_author: SCPF - S13 Production Team
+site_description: Information hub for Site - 13
+repo_name: SCPF-S13/information
+repo_url: https://github.com/SCPF-S13/information
+
+theme:
+  name: material
+  features:
+    - tabs
+
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+
+  icon:
+    repo: fontawesome/brands/github
+
+  include_search_page: false
+  search_index_only: true
+
+  language: en
+
+plugins:
+  - search:
+      separator: '[\s\-]+'
+  - awesome-pages
+  - git-revision-date-localized:
+      type: date
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - md_in_html
+
+extra_css:
+- stylesheets/extra.css
